@@ -13,7 +13,9 @@ class Screen2 extends StatelessWidget {
       ),
       body: Center(
         child: TextButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pop(context);
+          },
           child: Text(
             'Go back to Screen 1',
             style: TextStyle(
