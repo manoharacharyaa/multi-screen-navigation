@@ -14,7 +14,16 @@ class Screen1 extends StatelessWidget {
       ),
       body: Center(
         child: TextButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) {
+                  return Screen2();
+                },
+              ),
+            );
+          },
           child: Text(
             'Go forward to Screen 2',
             style: TextStyle(
