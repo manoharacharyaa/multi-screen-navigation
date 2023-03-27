@@ -8,15 +8,18 @@ class Screen0 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: Color.fromARGB(255, 114, 183, 58),
         title: Text('Screen 0'),
         centerTitle: true,
       ),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, '/first');
+              },
               child: Text(
                 'Go to Screen 1',
                 style: TextStyle(
@@ -27,12 +30,14 @@ class Screen0 extends StatelessWidget {
               ),
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(
-                  Colors.deepPurple,
+                  Color.fromARGB(255, 114, 183, 58),
                 ),
               ),
             ),
             TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, '/second');
+              },
               child: Text(
                 'Go to Screen 2',
                 style: TextStyle(
@@ -43,7 +48,7 @@ class Screen0 extends StatelessWidget {
               ),
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(
-                  Colors.deepPurple,
+                  Color.fromARGB(255, 114, 183, 58),
                 ),
               ),
             ),
